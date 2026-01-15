@@ -1,4 +1,4 @@
-(function() {
+function() {
 // Check if the app is already running
 if (window.myBookmarkletAppLoaded) {
     console.log("MyBookmarkletApp is already loaded.");
@@ -31,4 +31,4 @@ appContainer.style.position = 'fixed';
 appContainer.style.top = '10%';
 appContainer.style.right = '10%';
 appContainer.style.zIndex = '10000';
-})();
+};
