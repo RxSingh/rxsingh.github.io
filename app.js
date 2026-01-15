@@ -1,5 +1,7 @@
+console.log("Outside the Function!");
 function() {
-// Check if the app is already running
+console.log("Inside the Function!");
+    // Check if the app is already running
 if (window.myBookmarkletAppLoaded) {
     console.log("MyBookmarkletApp is already loaded.");
     return;
