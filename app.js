@@ -9,7 +9,7 @@
     // Create the main application container
     const appContainer = document.createElement('div');
     appContainer.id = 'my-bookmarklet-app';
-    appContainer.innerHTML = `
+    appContainer.innerHTML = '
         <div class="app-header">
             <h1>My Bookmarklet App</h1>
             <button onclick="document.body.removeChild(document.getElementById('my-bookmarklet-app'))">Close</button>
@@ -18,7 +18,7 @@
             <p>This is a complete app injected by a bookmarklet!</p>
             <button id="action-btn">Click me for action</button>
         </div>
-    `;
+    ';
     document.body.appendChild(appContainer);
 
     // Add functionality with event listeners
