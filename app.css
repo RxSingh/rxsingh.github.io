@@ -23,3 +23,49 @@
 .app-content button {
     margin-top: 10px;
 }
+
+/* Isolated within Shadow DOM */
+:host {
+  --primary: #6366f1;
+  --bg-glass: rgba(255, 255, 255, 0.7);
+}
+
+.app-shell {
+  position: fixed; top: 20px; right: 20px; width: 350px;
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px) saturate(180%); /* Liquid Glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow: hidden; z-index: 10000;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 15px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.card:hover { transform: translateY(-2px); }
+
+button.action {
+  grid-column: span 2;
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
