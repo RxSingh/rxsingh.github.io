@@ -1,0 +1,25 @@
+#my-bookmarklet-app {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    font-family: sans-serif;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.app-header button {
+    cursor: pointer;
+}
+
+.app-content button {
+    margin-top: 10px;
+}
