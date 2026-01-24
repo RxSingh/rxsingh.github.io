@@ -11,6 +11,7 @@ alert("Data received from Bookmarklet: user=" + receivedData.user + " timestamp=
 delete receivedData.pageTitle;
 delete receivedData.user;
 delete receivedData.timestamp;
+delete receivedData
 receivedData = null;
 receivedData = undefined;
 alert("Cleared variables data for next run");
