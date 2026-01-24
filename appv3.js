@@ -1,8 +1,17 @@
 alert("Check the console log for variables values passed thru the bookmark");
 // Access the data directly from the window object
-let receivedData = window.myAppData;
+if (typeof receivedData !== "undefined")
+    {receivedData = window.myAppData;}
+else
+    {let receivedData = window.myAppData;}
 console.log('Data from bookmarklet:', receivedData.pageTitle);
 console.log('Data from bookmarklet:', receivedData.user);
 console.log('Data from bookmarklet:', receivedData.timestamp);
-delete receivedData
+alert("Data received from Bookmarklet: user=" + receivedData.user + " timestamp=" + receivedData.timestamp + " pageTitle=" + receivedData.pageTitle);
+delete receivedData.pageTitle;
+delete receivedData.user;
+delete receivedData.timestamp;
+receivedData = null;
+receivedData = undefined;
 alert("Cleared variables data for next run");
+alert("Data received from Bookmarklet: user=" + receivedData.user + " timestamp=" + receivedData.timestamp + " pageTitle=" + receivedData.pageTitle);
