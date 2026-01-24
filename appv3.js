@@ -1,4 +1,4 @@
-alert("V_2.2 Check the console log for variables values passed thru the bookmark");
+alert("V_2.3 Check the console log for variables values passed thru the bookmark");
 let receivedData = window.myAppData;
 console.log('Data from bookmarklet:', receivedData.pageTitle);
 console.log('Data from bookmarklet:', receivedData.user);
