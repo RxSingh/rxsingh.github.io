@@ -1,4 +1,5 @@
-alert("V_2 Check the console log for variables values passed thru the bookmark");
+"use strict";
+alert("V_2.1 Check the console log for variables values passed thru the bookmark");
 // Access the data directly from the window object
 let receivedData = window.myAppData;
 // if (typeof receivedData == "undefined"){
