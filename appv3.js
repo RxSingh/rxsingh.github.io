@@ -1,9 +1,11 @@
-alert("V_1.1 Check the console log for variables values passed thru the bookmark");
+alert("V_1.2 Check the console log for variables values passed thru the bookmark");
 // Access the data directly from the window object
 // let receivedData = window.myAppData;
 if (typeof receivedData == "undefined")
+   alert("receivedData is undefined... defining and assigning value to it")
    {let receivedData = window.myAppData;}
 else
+   alert("receivedData is already defined... assigning value to it")
    {receivedData = window.myAppData;}
 console.log('Data from bookmarklet:', receivedData.pageTitle);
 console.log('Data from bookmarklet:', receivedData.user);
